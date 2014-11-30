@@ -872,6 +872,8 @@ R["Watcher"] = {
                 { spellID = 121557, unitId = "player", caster = "all", filter = "BUFF" },
                 --幻影術
                 { spellID = 114239, unitId = "player", caster = "player", filter = "BUFF" },
+                --愈合之语
+				{ spellID = 155362, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标buff&debuff",
@@ -887,6 +889,8 @@ R["Watcher"] = {
                 { spellID = 139, unitId = "target", caster = "player", filter = "BUFF" },
                 --防護恐懼結界
                 { spellID = 6346, unitId = "target", caster = "all", filter = "BUFF" },
+				--神圣庇护
+                { spellID = 47753, unitId = "target", caster = "all", filter = "BUFF" },
             },
             {
                 name = "玩家重要buff&debuff",
@@ -924,7 +928,8 @@ R["Watcher"] = {
                 { spellID = 124430, unitId = "player", caster = "player", filter = "BUFF" },
                 --精神護罩
                 { spellID = 109964, unitId = "player", caster = "player", filter = "BUFF" },
-                
+                --愈合之语
+				{ spellID = 155363, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标重要buff&debuff",
