@@ -55,6 +55,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+                --坚毅
+                { spellID = 158300, unitId = "player", caster = "player", filter = "BUFF" },
                 --日之巅
                 {spellID = 171744, unitID = "player", caster = "player", filter = "BUFF"},
                 --月之巅
@@ -482,6 +484,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+                --坚毅
+                { spellID = 158300, unitId = "player", caster = "player", filter = "BUFF" },
                 --驟亡
                 { spellID = 52437, unitId = "player", caster = "player", filter = "BUFF" },
                 --狂暴之怒
@@ -605,6 +609,8 @@ R["Watcher"] = {
                 { spellID = 324, unitId = "player", caster = "player", filter = "BUFF" },
                 --Water Shield / Wasserschild
                 { spellID = 52127, unitId = "player", caster = "player", filter = "BUFF" },
+                --治疗之雨
+                { spellID = 73920, unitId = "player", caster = "player", filter = "BUFF" },
 
             },
             {
@@ -757,6 +763,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+                --坚毅
+                { spellID = 158300, unitId = "player", caster = "player", filter = "BUFF" },
                 --神聖之盾
                 { spellID = 20925, unitId = "player", caster = "player", filter = "BUFF" },
                 --神圣意志
@@ -940,6 +948,8 @@ R["Watcher"] = {
                 { spellID = 109964, unitId = "player", caster = "player", filter = "BUFF" },
                 --愈合之语
 				{ spellID = 155363, unitId = "player", caster = "player", filter = "BUFF" },
+                --暗言术：乱
+                { spellID = 132573, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标重要buff&debuff",
@@ -1295,6 +1305,8 @@ R["Watcher"] = {
                 { spellID = 853, unitId = "target", caster = "all", filter = "DEBUFF" },
                 --制裁之拳
                 { spellID = 105593, unitId = "target", caster = "all", filter = "DEBUFF" },
+                --暗影反射
+                { spellID = 156745, unitId = "target", caster = "player", filter = "DEBUFF" },
             },
             {
                 name = "焦点buff&debuff",
@@ -1387,6 +1399,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+                --坚毅
+                { spellID = 158300, unitId = "player", caster = "player", filter = "BUFF" },
                 --血魄護盾
                 { spellID = 77535, unitId = "player", caster = "player", filter = "BUFF" },
                 --血魄轉化
@@ -1518,6 +1532,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+                --坚毅
+                { spellID = 158300, unitId = "player", caster = "player", filter = "BUFF" },
                 --虎掌
                 { spellID = 125359, unitId = "player", caster = "player", filter = "BUFF" },
                 --禪心玉
@@ -1735,6 +1751,12 @@ R["Watcher"] = {
                 { spellID = 126577, unitId = "player", caster = "player", filter = "BUFF" },
                 -- 完美瞄準 (智力, 觸發)
                 { spellID = 138963, unitId = "player", caster = "player", filter = "BUFF" },
+				-- 動亂聚焦水晶（智力，使用）
+                { spellID = 176882, unitId = "player", caster = "player", filter = "BUFF" },
+				-- 空無裂片（智力，使用）
+                { spellID = 176875, unitId = "player", caster = "player", filter = "BUFF" },
+				
+				--------------------------------------------------------------------------------
                 -- 治療
                 -- 秦璽的極化徽印 (智力, 觸發)
                 { spellID = 126588, unitId = "player", caster = "player", filter = "BUFF" },
@@ -1747,6 +1769,7 @@ R["Watcher"] = {
                 -- 傲慢之棱光囚笼（智力，觸發）
                 { spellID = 146314, unitId = "player", caster = "player", filter = "BUFF" },
 
+				--------------------------------------------------------------------------------
                 --專業技能
                 -- 神經突觸彈簧
                 { spellID = 126734, unitId = "player", caster = "player", filter = "BUFF", fuzzy = true },
@@ -1755,9 +1778,14 @@ R["Watcher"] = {
                 -- 降落傘
                 { spellID = 55001, unitId = "player", caster = "player", filter = "BUFF" },
 
+				-- 德萊尼煉金石
+                { spellID = 60234, unitId = "player", caster = "player", filter = "BUFF" },
+				--------------------------------------------------------------------------------
                 --武器附魔
                 --玉魂
                 { spellID = 104993, unitId = "player", caster = "all", filter = "BUFF" },
+				-- 戰歌印記（急速，附魔，觸發）
+                { spellID = 159675, unitId = "player", caster = "all", filter = "BUFF" },
 
                 --藥水
                 -- Draenic Agility Potion
@@ -1777,6 +1805,7 @@ R["Watcher"] = {
                 --卡法加速
                 { spellID = 125282, unitId = "player", caster = "player", filter = "BUFF" },
 
+				--------------------------------------------------------------------------------
                 --特殊buff
                 -- 偷天換日
                 { spellID = 57933, unitId = "player", caster = "all", filter = "BUFF" },
@@ -2161,3 +2190,4 @@ R["Watcher"] = {
         },
     }
 }
+
