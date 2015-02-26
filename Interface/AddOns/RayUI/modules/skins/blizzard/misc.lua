@@ -92,6 +92,7 @@ local function LoadSkin()
 		"InterfaceOptionsFrameDefaults",
 		"InterfaceOptionsFrameOkay",
 		"InterfaceOptionsFrameCancel",
+		"InterfaceOptionsSocialPanelTwitterLoginButton",
 		"ChatConfigFrameOkayButton",
 		"ChatConfigFrameDefaultButton",
 		"StackSplitOkayButton",
@@ -437,9 +438,12 @@ local function LoadSkin()
 		"Graphics_ParticleDensityDropDown",
 		"Graphics_ViewDistanceDropDown",
 		"Graphics_EnvironmentalDetailDropDown",
+		"Graphics_DepthEffectsDropDown",
 		"Graphics_GroundClutterDropDown",
 		"Graphics_SSAODropDown",
-		"Graphics_RefractionDropDown",
+		"Graphics_DepthEffectsDropDown",
+		"Graphics_LightingQualityDropDown",
+		"Graphics_OutlineModeDropDown",
 		"RaidGraphics_TextureResolutionDropDown",
 		"RaidGraphics_FilteringDropDown",
 		"RaidGraphics_ProjectedTexturesDropDown",
@@ -484,7 +488,8 @@ local function LoadSkin()
 		"InterfaceOptionsCombatTextPanelFCTDropDown",
 		"InterfaceOptionsStatusTextPanelDisplayDropDown",
 		"InterfaceOptionsCameraPanelStyleDropDown",
-		"InterfaceOptionsMousePanelClickMoveStyleDropDown"
+		"InterfaceOptionsMousePanelClickMoveStyleDropDown",
+		"InterfaceOptionsAccessibilityPanelColorFilterDropDown"
 	}
 	for i = 1, #dropdowns do
 		S:ReskinDropDown(_G[dropdowns[i]])
@@ -498,6 +503,7 @@ local function LoadSkin()
 		"Advanced_UIScaleSlider",
 		"Advanced_MaxFPSSlider",
 		"Advanced_MaxFPSBKSlider",
+		"Advanced_RenderScaleSlider",
 		"Advanced_GammaSlider",
 		"AudioOptionsSoundPanelSoundQuality",
 		"AudioOptionsSoundPanelMasterVolume",
@@ -536,6 +542,7 @@ local function LoadSkin()
 		"AudioOptionsSoundPanelLoopMusic",
 		"AudioOptionsSoundPanelPetBattleMusic",
 		"AudioOptionsSoundPanelAmbientSounds",
+		"AudioOptionsSoundPanelDialogSounds",
 		"AudioOptionsSoundPanelSoundInBG",
 		"AudioOptionsSoundPanelReverb",
 		"AudioOptionsSoundPanelHRTF",
@@ -624,6 +631,7 @@ local function LoadSkin()
 		"InterfaceOptionsSocialPanelChatHoverDelay",
 		"InterfaceOptionsSocialPanelGuildMemberAlert",
 		"InterfaceOptionsSocialPanelChatMouseScroll",
+		"InterfaceOptionsSocialPanelEnableTwitter",
 		"InterfaceOptionsSocialPanelWholeChatWindowClickable",
 		"InterfaceOptionsActionBarsPanelBottomLeft",
 		"InterfaceOptionsActionBarsPanelBottomRight",
@@ -717,38 +725,6 @@ local function LoadSkin()
 		S:ReskinCheck(_G[checkboxes[i]])
 	end
 
-	local dropdowns = {
-		"InterfaceOptionsControlsPanelAutoLootKeyDropDown",
-		"InterfaceOptionsCombatPanelTOTDropDown",
-		"InterfaceOptionsCombatPanelFocusCastKeyDropDown",
-		"InterfaceOptionsCombatPanelSelfCastKeyDropDown",
-		"InterfaceOptionsDisplayPanelAggroWarningDisplay",
-		"InterfaceOptionsDisplayPanelWorldPVPObjectiveDisplay",
-		"InterfaceOptionsSocialPanelChatStyle",
-		"InterfaceOptionsSocialPanelTimestamps",
-		"InterfaceOptionsSocialPanelWhisperMode",
-		"InterfaceOptionsSocialPanelBnWhisperMode",
-		"InterfaceOptionsSocialPanelConversationMode",
-		"InterfaceOptionsActionBarsPanelPickupActionKeyDropDown",
-		"InterfaceOptionsNamesPanelNPCNamesDropDown",
-		"InterfaceOptionsNamesPanelUnitNameplatesMotionDropDown",
-		"InterfaceOptionsCombatTextPanelFCTDropDown",
-		"CompactUnitFrameProfilesProfileSelector",
-		"CompactUnitFrameProfilesGeneralOptionsFrameSortByDropdown",
-		"CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdown",
-		"InterfaceOptionsCameraPanelStyleDropDown",
-		"InterfaceOptionsMousePanelClickMoveStyleDropDown",
-		"Advanced_GraphicsAPIDropDown",
-		"InterfaceOptionsCombatPanelLossOfControlFullDropDown",
-		"InterfaceOptionsCombatPanelLossOfControlSilenceDropDown",
-		"InterfaceOptionsCombatPanelLossOfControlInterruptDropDown",
-		"InterfaceOptionsCombatPanelLossOfControlDisarmDropDown",
-		"InterfaceOptionsCombatPanelLossOfControlRootDropDown"
-	}
-	for i = 1, #dropdowns do
-		S:ReskinDropDown(_G[dropdowns[i]])
-	end
-
 	local sliders = {
 		"InterfaceOptionsCombatPanelSpellAlertOpacitySlider",
 		"InterfaceOptionsCombatPanelMaxSpellStartRecoveryOffset",
@@ -831,7 +807,7 @@ local function LoadSkin()
 		_G[tab:GetName().."Text"]:SetPoint("CENTER", tab, "CENTER")
 	end)
 
-	if IsMacClient() then
+	--[[ if IsMacClient() then
 		S:CreateBD(MacOptionsFrame)
 		MacOptionsFrameHeader:SetTexture("")
 		MacOptionsFrameHeader:ClearAllPoints()
@@ -875,7 +851,7 @@ local function LoadSkin()
 
 		MacOptionsFrameDefaults:SetWidth(96)
 		MacOptionsFrameDefaults:SetHeight(22)
-	end
+	end ]]
 
 	SideDressUpModel:HookScript("OnShow", function(self)
 		self:ClearAllPoints()
