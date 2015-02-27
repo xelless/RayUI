@@ -48,6 +48,8 @@ R["Watcher"] = {
                 { spellID = 102355, unitId = "target", caster = "all", filter = "DEBUFF" },
                 --回春術(萌芽)
                 { spellID = 155777, unitId = "target", caster = "player", filter = "BUFF" },
+
+
             },
             {
                 name = "玩家重要buff&debuff",
@@ -117,6 +119,8 @@ R["Watcher"] = {
                 { spellID = 135286, unitId = "player", caster = "player", filter = "BUFF" },
                 --野蛮防御
                 { spellID = 132402, unitId = "player", caster = "player", filter = "BUFF" },
+                --枭兽狂乱
+                { spellID = 157228, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标重要buff&debuff",
@@ -1092,11 +1096,11 @@ R["Watcher"] = {
                 --魔性征召
                 { spellID = 114925, unitId = "player", caster = "player", filter = "BUFF" },
                 --魔典：恶魔牺牲
-                { spellID = 108503, unitId = "player", caster = "player", filter = "BUFF" },
+                --{ spellID = 108503, unitId = "player", caster = "player", filter = "BUFF" },
                 --恶魔法阵：召唤
-                { spellID = 48018, unitId = "player", caster = "player", filter = "BUFF" },
+                --{ spellID = 48018, unitId = "player", caster = "player", filter = "BUFF" },
                 --灵魂石保存
-                { spellID = 20707, unitId = "player", caster = "player", filter = "BUFF" },
+                --{ spellID = 20707, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标buff&debuff",
