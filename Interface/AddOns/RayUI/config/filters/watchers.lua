@@ -121,6 +121,8 @@ R["Watcher"] = {
                 { spellID = 132402, unitId = "player", caster = "player", filter = "BUFF" },
                 --枭兽狂乱
                 { spellID = 157228, unitId = "player", caster = "player", filter = "BUFF" },
+                --落日余晖
+                { spellID = 155592, unitId = "player", caster = "player", filter = "BUFF" },
             },
             {
                 name = "目标重要buff&debuff",
@@ -515,6 +517,8 @@ R["Watcher"] = {
                 setpoint = positions.player_proc_icon,
                 size = 38,
 
+				--不屈打擊
+                { spellID = 169686, unitId = "player", caster = "player", filter = "BUFF" },
                 --驟亡
                 { spellID = 52437, unitId = "player", caster = "player", filter = "BUFF" },
                 --狂暴之怒
